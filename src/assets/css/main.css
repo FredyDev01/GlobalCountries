@@ -1,0 +1,23 @@
+@import "./fonts.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-blue-100 lg:!overflow-auto;
+  }
+}
+
+@layer components {
+  .text-notify {
+    @apply text-2xl font-medium text-custom-gray-300;
+  }
+
+  .description {
+    @apply text-lg text-custom-gray-200;
+  }
+  .description > strong {
+    @apply text-sky-500;
+  }
+}
